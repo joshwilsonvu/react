@@ -72,7 +72,6 @@ function Component(t0) {
   }
 
   t3 = items;
-  const y = t3;
   let t4;
   if ($[5] !== a) {
     t4 = [a];
@@ -99,6 +98,7 @@ function Component(t0) {
   } else {
     t6 = $[12];
   }
+  const y = t3;
   let t7;
   if ($[13] !== t6 || $[14] !== y) {
     t7 = <ValidateMemoization inputs={t6} output={y} />;

@@ -49,7 +49,6 @@ function Component(props) {
     t2 = $[2];
   }
   t0 = t2;
-  const doubled = t0;
   let t3;
   if ($[3] !== state) {
     t3 = [state];
@@ -58,6 +57,7 @@ function Component(props) {
   } else {
     t3 = $[4];
   }
+  const doubled = t0;
   let t4;
   if ($[5] !== t3 || $[6] !== doubled) {
     t4 = <ValidateMemoization inputs={t3} output={doubled} />;

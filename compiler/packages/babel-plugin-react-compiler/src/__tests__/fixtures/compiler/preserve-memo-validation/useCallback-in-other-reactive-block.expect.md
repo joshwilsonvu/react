@@ -53,8 +53,8 @@ function useFoo(minWidth, otherProp) {
     }
     const style = t1;
 
-    arrayPush(x, otherProp);
     t0 = [style, x];
+    arrayPush(x, otherProp);
     $[0] = width;
     $[1] = minWidth;
     $[2] = otherProp;

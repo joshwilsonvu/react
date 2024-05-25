@@ -28,7 +28,6 @@ function Component(props) {
     x = $[1];
   }
   const { length: y } = x;
-  foo(y);
   let t0;
   if ($[2] !== x || $[3] !== y) {
     t0 = [x, y];
@@ -38,6 +37,7 @@ function Component(props) {
   } else {
     t0 = $[4];
   }
+  foo(y);
   return t0;
 }
 

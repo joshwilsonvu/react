@@ -33,35 +33,25 @@ import { c as _c } from "react/compiler-runtime";
 import { Stringify } from "shared-runtime";
 
 function hoisting() {
-  const $ = _c(3);
-  let onClick;
-  let onClick2;
-  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
-    onClick = function onClick() {
-      return bar.baz;
-    };
+  const $ = _c(1);
+  const onClick = function onClick() {
+    return bar.baz;
+  };
 
-    onClick2 = function onClick2() {
-      return bar[baz];
-    };
-
-    const baz = "baz";
-    const bar = { baz: 1 };
-    $[0] = onClick;
-    $[1] = onClick2;
-  } else {
-    onClick = $[0];
-    onClick2 = $[1];
-  }
+  const onClick2 = function onClick2() {
+    return bar[baz];
+  };
   let t0;
-  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
     t0 = (
       <Stringify onClick={onClick} onClick2={onClick2} shouldInvokeFns={true} />
     );
-    $[2] = t0;
+    $[0] = t0;
   } else {
-    t0 = $[2];
+    t0 = $[0];
   }
+  const baz = "baz";
+  const bar = { baz: 1 };
   return t0;
 }
 
